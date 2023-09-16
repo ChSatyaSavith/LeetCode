@@ -1,34 +1,64 @@
-#include <sstream>
 #include <vector>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
-vector<int> parseInts(string str) {
-	stringstream ss(str);
-    char word;
-    string empty = "";
-    vector<int> n;
-    while(ss>>word)
-    {
-        empty += word;
-        if(ss.peek()==',')
-        {
-            n.push_back(stoi(empty));
-            empty = "";
-            ss.ignore();
-        }
+vector<int> func_calls;
 
+void recursion(int previous,int current,int sum,vector<int> line1,vector<int> line2,int players)
+{
+    if(previous!=current)
+    {
+        int max = -1;
+        for(int i = previous+1;i<current;i++)
+        {
+            if(line2[i]>max)
+            {
+                max = line2[i];
+            }
+        }
+        sum = sum + max;
     }
-    n.push_back(stoi(empty));
-    return n;
+    if(current == players-2)
+    {
+        sum += line2[current+1];
+    }
+    for(int i = current+2;i<players;i++)
+    {
+        recursion(current,i,sum+line1[i],line1,line2,players);
+    }
+    func_calls.push_back(sum);
 }
 
-int main() {
-    string str = "23,45,56";
-    vector<int> integers = parseInts(str);
-    for(int i = 0; i < integers.size(); i++) {
-        cout << integers[i] << "\n";
+void recursion1(int previous,int current,int sum,vector<int> line1,vector<int> line2,int players)
+{
+    if(previous!=current)
+    {
+        int max = -1;
+        for(int i = previous+1;i<current;i++)
+        {
+            if(line1[i]>max)
+            {
+                max = line2[i];
+            }
+        }
+        sum = sum + max;
     }
-    
-    return 0;
+    if(current == players-2)
+    {
+        sum += line1[current+1];
+    }
+    for(int i = current+2;i<players;i++)
+    {
+        recursion(current,i,sum+line2[i],line1,line2,players);
+    }
+    func_calls.push_back(sum);
+}
+int main()
+{
+    vector<int> line1 = {9,3,5,7,3};
+    vector<int> line2 = {1,8,9,4,5};
+    recursion(0,0,line1[0],line1,line2,5);
+    recursion(0,0,line2[0],line1,line2,5);
+    cout<<*max_element(func_calls.begin(),func_calls.end())<<endl;
 }
