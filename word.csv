@@ -1,131 +1,199 @@
-Name,Frequency
-U-Net,1
-Ga2m,1
-Resnet-34,1
-Logistic Regression,8
-Support Vector Machines,3
-Decision Tree,10
-Random Forest,12
-Artificial Neural Network Multilayer Perceptron and 1D Convolution Network,1
-K-Nearest Neighbour,1
-Gaussian Naive Bayes,1
-Support Vector Machine,6
-XGBoost,5
-LightGBM,1
-CatBoost,2
-MLP Classifier,1
-Voting Classifier,1
-Multilayer Perceptron,3
-AdaBoost,2
-Naïve Bayes,1
-Neural Network,1
-Artificial Neural Network,3
-Clustering,1
-Rule-Based,1
-Genetic Algorithm,1
-K-Neighbors Classifier,1
-Support Vector Classifier,1
-Decision Tree Classifier,1
-Random Forest Classifier,2
-Artificial Neural Network,2
-NN U-Net,1
-Decision Tree Regressor,1
-And Gradient Boosting,1
-MidPE,1
-MidP,1
-WBSMDA,1
-RLSMDA,1
-CPTL,1
-HDMP,1
-K-Nearest Neighbors,2
-Naive Bayesian,1
-Multi-Layer Perceptron,1
-Extreme Gradient Boosting,3
-Naive Bayes,3
-KNN,4
-K-Nearest Neighbor,2
-Gradient Boosting,3
-Logistic Regression and Support Vector Machine,1
-Multiple Linear Regression Models,1
-Deep Learning,1
-K-Nearest Neighbour,1
-Deep Neural Network,1
-Ada-Boost Classifier,1
-Extra Trees Classifier,1
-Gradient Boost,1
-MLP,1
-Extreme Gradient Boost,1
-And LR,1
-Linear SVM,1
-RBF Kernel SVM,1
-Polynomial Kernel SVM,1
-Nearest Neighbours,1
-Neural Net,1
-Gradient Boosting Classifier,1
-Balanced Random Forests,1
-RMSSD,1
-LSTM Neural Net,1
-DNN,2
-CNN,5
-Generalized Additive Models,1
-Elastic Net,1
-Random Forests,1
-A Bayesian Logistic Regression with Default Priors,1
-And a Simple Classification Tree,1
-RF,1
-PLS-DA,1
-And SVM,1
-SVM,1
-Direct SVM,1
-Polynomial SVM,1
-ELM,2
-CNN-LSTM,2
-CNN-RNN,2
-Multivariate Cox Regression,1
-Random Survival Forest,1
-Gradient Boosting Model,1
-Lasso Cox Regression,1
-Bayesian Network,1
-Ensemble,1
-Adaptive Boosting,1
-ML4HSEG—A Deep Learning Segmentation Model,1
-Inline VF,1
-Deep Learning Regression,1
-Deep NN,2
-ValveNet Deep Learning Model,1
-Stacking Ensemble Learner,1
-A Weight-Based Multiple Empirical Kernel Learning with Neighbor Discriminant Constraint,1
-Index Admission Model,1
-Index Discharge Model,1
-Feature-Aggregated Model,1
-Radial Basis Function Neural Network,1
-Kernel Ridge Regression,1
-Latent Dirichlet Allocation,1
-Poisson Dirichlet Model,1
-Gradient Boosting Machine,1
-Light Gradient Boosting Machine,1
-Linear Support Vector Classifier,1
-Gaussian Naïve Bayes,1
-L1 Logistic Regression,1
-Least Absolute Shrinkage and Selection Operator,1
-Support Vector Machine Recursive Feature Elimination,1
-Gradient Boosting Decision Tree,1
-CatBoost Model,1
-VGG16,1
-Xception,1
-Resnet50 and Inception Resnet V2,1
-Support Vector Machine and Random Forest,1
-Extremely Randomized Trees,1
-IPC Ridge,1
-Coxph,1
-Coxnet,1
-Stagewise GB,1
-Componentwise GB,1
-Fast SVM,1
-Fast Kernel SVM.,1
-Temporal Convolutional Network,1
-Recurrent Neural Network,1
-Transformer with Transfer Learning,1
-LSTM,1
-CNN-LSTM,1
-LDA,1
+Here is the list of words repeated according to their frequency:
+
+U-Net
+Ga2m
+Resnet-34
+Logistic Regression
+Logistic Regression
+Logistic Regression
+Logistic Regression
+Logistic Regression
+Logistic Regression
+Logistic Regression
+Logistic Regression
+Logistic Regression
+Support Vector Machines
+Support Vector Machines
+Support Vector Machines
+Decision Tree
+Decision Tree
+Decision Tree
+Decision Tree
+Decision Tree
+Decision Tree
+Decision Tree
+Decision Tree
+Decision Tree
+Decision Tree
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Random Forest
+Artificial Neural Network Multilayer Perceptron and 1D Convolution Network
+K-Nearest Neighbour
+Gaussian Naive Bayes
+Support Vector Machine
+Support Vector Machine
+Support Vector Machine
+Support Vector Machine
+Support Vector Machine
+Support Vector Machine
+XGBoost
+XGBoost
+XGBoost
+XGBoost
+XGBoost
+LightGBM
+CatBoost
+CatBoost
+MLP Classifier
+Voting Classifier
+Multilayer Perceptron
+Multilayer Perceptron
+Multilayer Perceptron
+AdaBoost
+AdaBoost
+Naïve Bayes
+Neural Network
+Artificial Neural Network
+Artificial Neural Network
+Artificial Neural Network
+Clustering
+Rule-Based
+Genetic Algorithm
+K-Neighbors Classifier
+Support Vector Classifier
+Decision Tree Classifier
+Random Forest Classifier
+Random Forest Classifier
+Artificial Neural Network
+Artificial Neural Network
+NN U-Net
+Decision Tree Regressor
+And Gradient Boosting
+MidPE
+MidP
+WBSMDA
+RLSMDA
+CPTL
+HDMP
+K-Nearest Neighbors
+K-Nearest Neighbors
+Naive Bayesian
+Multi-Layer Perceptron
+Extreme Gradient Boosting
+Extreme Gradient Boosting
+Extreme Gradient Boosting
+Naive Bayes
+Naive Bayes
+Naive Bayes
+KNN
+KNN
+KNN
+KNN
+K-Nearest Neighbor
+K-Nearest Neighbor
+Gradient Boosting
+Gradient Boosting
+Gradient Boosting
+Logistic Regression and Support Vector Machine
+Multiple Linear Regression Models
+Deep Learning
+K-Nearest Neighbour
+Deep Neural Network
+Ada-Boost Classifier
+Extra Trees Classifier
+Gradient Boost
+MLP
+Extreme Gradient Boost
+And LR
+Linear SVM
+RBF Kernel SVM
+Polynomial Kernel SVM
+Nearest Neighbours
+Neural Net
+Gradient Boosting Classifier
+Balanced Random Forests
+RMSSD
+LSTM Neural Net
+DNN
+DNN
+CNN
+CNN
+CNN
+CNN
+CNN
+Generalized Additive Models
+Elastic Net
+Random Forests
+A Bayesian Logistic Regression with Default Priors
+And a Simple Classification Tree
+RF
+PLS-DA
+And SVM
+SVM
+Direct SVM
+Polynomial SVM
+ELM
+ELM
+CNN-LSTM
+CNN-LSTM
+CNN-RNN
+CNN-RNN
+Multivariate Cox Regression
+Random Survival Forest
+Gradient Boosting Model
+Lasso Cox Regression
+Bayesian Network
+Ensemble
+Adaptive Boosting
+ML4HSEG—A Deep Learning Segmentation Model
+Inline VF
+Deep Learning Regression
+Deep NN
+Deep NN
+ValveNet Deep Learning Model
+Stacking Ensemble Learner
+A Weight-Based Multiple Empirical Kernel Learning with Neighbor Discriminant Constraint
+Index Admission Model
+Index Discharge Model
+Feature-Aggregated Model
+Radial Basis Function Neural Network
+Kernel Ridge Regression
+Latent Dirichlet Allocation
+Poisson Dirichlet Model
+Gradient Boosting Machine
+Light Gradient Boosting Machine
+Linear Support Vector Classifier
+Gaussian Naïve Bayes
+L1 Logistic Regression
+Least Absolute Shrinkage and Selection Operator
+Support Vector Machine Recursive Feature Elimination
+Gradient Boosting Decision Tree
+CatBoost Model
+VGG16
+Xception
+Resnet50 and Inception Resnet V2
+Support Vector Machine and Random Forest
+Extremely Randomized Trees
+IPC Ridge
+Coxph
+Coxnet
+Stagewise GB
+Componentwise GB
+Fast SVM
+Fast Kernel SVM
+Temporal Convolutional Network
+Recurrent Neural Network
+Transformer with Transfer Learning
+LSTM
+CNN-LSTM
+LDA
