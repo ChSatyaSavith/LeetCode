@@ -11,97 +11,75 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        
+        int carry = 0;
         ListNode* head = NULL;
         ListNode* prev = NULL;
-        int carry = 0;
-        bool flag = true;
-        while(l1!=nullptr && l2!=nullptr)
+
+        while(l1!=NULL && l2!=NULL)
         {
-            int val = l1->val + l2->val + carry;
+            int add = l1->val + l2->val + carry;
+            carry = add / 10;
+
             ListNode* newnode = new ListNode();
-            if(val>=10)
-            {
-                carry = val/10;
-                val = val % 10;
-            }
-            else
-            {
-                carry = 0;
-            }
-
-            newnode->val = val;
-            newnode->next = nullptr;
-
-            if(flag)
+            newnode->val = add % 10;
+            newnode->next = NULL;
+            if(head==NULL)
             {
                 head = newnode;
                 prev = newnode;
-                flag = false;
             }
             else
             {
                 prev->next = newnode;
                 prev = newnode;
             }
-
             l1 = l1->next;
             l2 = l2->next;
         }
-
-        if(l1==nullptr && l2!=nullptr)
+        while(l1!=NULL)
         {
-            while(l2!=nullptr)
+            ListNode* newnode = new ListNode();
+            int add = l1->val + carry;
+            carry = add / 10;
+            newnode->val = add % 10;
+            newnode->next = NULL;
+            if(head==NULL)
             {
-                int val = l2->val + 0 + carry;
-                ListNode* newnode = new ListNode();
-                if(val>=10)
-                {
-                    carry = val/10;
-                    val = val % 10;
-                }
-                else
-                {
-                    carry = 0;
-                }
-                newnode->val = val;
-                newnode->next = nullptr;
-                prev->next = newnode;
+                head = newnode;
                 prev = newnode;
-                l2 = l2->next;
             }
-        }
-
-        else if(l1!=nullptr && l2==nullptr)
-        {
-            while(l1!=nullptr)
+            else
             {
-                int val = l1->val + 0 + carry;
-                ListNode* newnode = new ListNode();
-                if(val>=10)
-                {
-                    carry = val/10;
-                    val = val % 10;
-                }
-                else
-                {
-                    carry = 0;
-                }
-                newnode->val = val;
-                newnode->next = nullptr;
                 prev->next = newnode;
                 prev = newnode;
                 l1 = l1->next;
             }
         }
-
+        while(l2!=NULL)
+        {
+            ListNode* newnode = new ListNode();
+            int add = l2->val + carry;
+            carry = add / 10;
+            newnode->val = add % 10;
+            newnode->next = NULL;
+            if(head==NULL)
+            {
+                head = newnode;
+                prev = newnode;
+            }
+            else
+            {
+                prev->next = newnode;
+                prev = newnode;
+                l2 = l2->next;
+            }
+        }
         if(carry!=0)
         {
             ListNode* newnode = new ListNode();
             newnode->val = carry;
-            newnode->next = nullptr;
+            newnode->next = NULL;
             prev->next = newnode;
-            prev = newnode;
         }
         return head;
     }
